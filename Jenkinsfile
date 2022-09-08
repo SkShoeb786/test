@@ -2,7 +2,7 @@ pipeline{
 	agent{
 	label{
 		label "built-in"
-		customWorkspace '/mnt/projects'
+		customWorkspace '/mnt/git-repo'
 	}
 	}
 	stages{

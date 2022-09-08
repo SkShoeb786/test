@@ -1,7 +1,9 @@
 pipeline{
 	agent{
+	label{
 		label "built-in"
 		customWorkspace '/mnt/projects'
+	}
 	}
 	stages{
 		stage("cloning git repo"){

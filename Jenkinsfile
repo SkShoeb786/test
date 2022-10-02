@@ -14,7 +14,7 @@ pipeline{
 		stage('deploy on slave'){
 			agent{
 				label{
-					lable 'slave'
+					label'slave'
 				}
 			}
 			steps{

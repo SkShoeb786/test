@@ -8,7 +8,7 @@ pipeline{
 	stages{
 		stage('new index.html'){
 			steps{
-			scp -i /root/sk2 /data/project/index.html ec2-user@15.206.27.55:/data/project/
+			sh 'scp -i /root/sk2 /data/project/index.html ec2-user@15.206.27.55:/data/project/'
 			}
 		}
 		stage('deploy on slave'){

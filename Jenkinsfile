@@ -19,6 +19,7 @@ pipeline{
 			}
 			steps{
 				sh 'sudo cp /data/project/index.html /var/www/html/'
+				sh 'sudo chmod 777 /var/www/html/index.html'
 				sh 'sudo systemctl restart httpd'
 			}
 		}
